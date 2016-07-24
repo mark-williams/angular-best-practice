@@ -7,7 +7,7 @@ var useref = require('gulp-useref');
 var assets = useref({searchPath: './'});
 
 gulp.task('default', ['optimise'], function() {
-    
+
 });
 
 gulp.task('inject-refs', function() {
@@ -26,7 +26,6 @@ gulp.task('optimise', ['inject-refs'], function() {
     return gulp
         .src(config.index)
         .pipe(assets)
-        //.pipe(assets.restore())
         .pipe(gulp.dest(config.build))
         ;
 });
