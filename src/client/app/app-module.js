@@ -3,6 +3,8 @@
     
     angular.module('app', [
        // Modules that make up the app go here
-       'app.fruit' 
+       'app.fruit',
+       'app.collaborate',
+       'app.core' 
     ]);
 })();    
