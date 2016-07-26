@@ -4,3 +4,12 @@ load angular in <head> section).*/
 .ng-cloak {
     display: none !important;
  }
+
+.site li {
+    line-height: 3em;
+}
+
+.site span.lister-price {
+    font-size: 1.4em;
+    font-weight: 666;
+}

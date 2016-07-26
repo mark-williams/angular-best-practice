@@ -1,0 +1,16 @@
+<div class="basket">
+    <h4>Basket</h4>
+    <div ng-repeat="item in getItems()">
+        <div class="row">
+            <div class="col-md-8">
+                {{ item.description }}<br />
+                Quantity: {{ item.quantity }}
+            </div>
+            <div class="col-md-4">
+                <span class="pull-right">{{ item.price | currency:'£' }}</span>
+            </div>
+        </div>
+    </div>
+    <div><h4>Total {{ getTotal() | currency:'£'}}</h4></div>
+    
+</div>
