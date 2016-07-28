@@ -13,11 +13,15 @@
 </head>
 
 <body>
-    <ng-include src="'src/client/app/layout/navigation.html'"></ng-include>
-    <div class="container ng-cloak site">
+    <div>
+        <ly-navigation />
+    </div>
+   
+    <div class="container site ng-cloak">
         <div ui-view></div>
     </div>
-
+    
+    
     <!-- build:js assets/scripts/lib.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -31,6 +35,8 @@
     <!-- inject:js -->
     <script src="/src/client/app/app-module.js"></script>
     <script src="/src/client/app/routes.js"></script>
+    <script src="/src/client/app/layout/layout-module.js"></script>
+    <script src="/src/client/app/layout/lyNavigation.js"></script>
     <script src="/src/client/app/fruit/fruit-module.js"></script>
     <script src="/src/client/app/fruit/fruit.js"></script>
     <script src="/src/client/app/collaborate/collaborate-module.js"></script>

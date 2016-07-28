@@ -8,18 +8,15 @@
     
     $stateProvider
         
-        // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
             url: '/',
             templateUrl: 'app/fruit/fruit.html'
         })
         
-        // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-        .state('collbaorate', {
+        .state('collaborate', {
             url: '/collaborate',
             templateUrl: 'app/collaborate/collaborate.html'
         });
-
-});
+    });
 
 })();
