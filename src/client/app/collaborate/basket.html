@@ -1,6 +1,6 @@
 <div class="basket">
     <h4>Basket</h4>
-    <div ng-repeat="item in getItems()">
+    <div ng-repeat="item in basketVm.getItems()">
         <div class="row">
             <div class="col-md-8">
                 {{ item.description }}<br />
@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-4"><h4>Total</h4></div>
             <div class="col-md-8">
-                <span class="pull-right"><h4>{{ getTotal() | currency:'£'}}</h4></span>
+                <span class="pull-right"><h4>{{ basketVm.getTotal() | currency:'£'}}</h4></span>
             </div>
         </div>
     </div>    

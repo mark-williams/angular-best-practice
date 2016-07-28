@@ -4,20 +4,24 @@ app.directive('clBasket', function(basketService) {
     return {
         restrict: 'E',
         templateUrl: 'app/collaborate/basket.html',
-        controller: function($scope) {
+        controllerAs: 'basketVm',
+        controller: function() {
+            var vm = this;
             var items = basketService.getItems();
 
-            $scope.itemCount = function() {
+            vm.itemCount = function() {
                 return items.length;
             };
 
-            $scope.getItems = function() {
+            vm.getItems = function() {
                 return items;
             };
 
-            $scope.getTotal = function() {
+            vm.them = items;
+
+            vm.getTotal = function() {
                 return basketService.getTotal();
             };
-        }
+        }        
     };
 });
